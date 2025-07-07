@@ -1,0 +1,452 @@
+[
+  {
+    "request_id": "gdpr_20240115_001",
+    "user_id": 1,
+    "request_type": "access",
+    "data_categories": ["profile", "water_logs", "health_goals", "social_data", "analytics"],
+    "reason": "I want to review all personal data stored about me",
+    "legal_basis": "Article 15 - Right of access by the data subject",
+    "verification_method": "email_verification",
+    "verification_data": {
+      "email": "user1@example.com",
+      "verification_code": "VER123456",
+      "ip_address": "192.168.1.100",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    },
+    "status": "completed",
+    "priority": "normal",
+    "deadline": "2024-02-14T10:30:00Z",
+    "submitted_at": "2024-01-15T10:30:00Z",
+    "processed_at": "2024-01-18T14:20:00Z",
+    "completed_at": "2024-01-20T09:15:00Z",
+    "response_data": {
+      "export_id": "exp_gdpr_20240115_001",
+      "file_format": "json",
+      "file_size_bytes": 15728640,
+      "download_url": "/gdpr/access/gdpr_20240115_001/download",
+      "expires_at": "2024-02-20T09:15:00Z",
+      "data_summary": {
+        "profile_records": 1,
+        "water_log_records": 1250,
+        "health_goal_records": 15,
+        "social_interaction_records": 89,
+        "analytics_records": 456
+      }
+    },
+    "compliance_officer": 101,
+    "notes": [
+      "Request verified via email",
+      "Data compiled and reviewed",
+      "Export generated successfully",
+      "User notified of completion"
+    ],
+    "attachments": [
+      "/gdpr/attachments/gdpr_20240115_001_verification.pdf",
+      "/gdpr/attachments/gdpr_20240115_001_data_inventory.xlsx"
+    ]
+  },
+  {
+    "request_id": "gdpr_20240112_001",
+    "user_id": 3,
+    "request_type": "rectification",
+    "data_categories": ["profile", "biometric_data"],
+    "reason": "Incorrect birth date and height recorded in my profile",
+    "legal_basis": "Article 16 - Right to rectification",
+    "verification_method": "identity_document",
+    "verification_data": {
+      "document_type": "passport",
+      "document_number": "P123456789",
+      "verification_status": "verified",
+      "verified_by": "compliance_officer_101"
+    },
+    "status": "completed",
+    "priority": "high",
+    "deadline": "2024-01-27T14:45:00Z",
+    "submitted_at": "2024-01-12T14:45:00Z",
+    "processed_at": "2024-01-13T09:30:00Z",
+    "completed_at": "2024-01-15T16:20:00Z",
+    "response_data": {
+      "corrections_made": [
+        {
+          "field": "birth_date",
+          "old_value": "1990-05-15",
+          "new_value": "1990-05-20",
+          "corrected_at": "2024-01-15T16:20:00Z"
+        },
+        {
+          "field": "height_cm",
+          "old_value": 175,
+          "new_value": 180,
+          "corrected_at": "2024-01-15T16:20:00Z"
+        }
+      ],
+      "affected_systems": ["user_profile", "health_calculations", "analytics"],
+      "verification_audit_trail": "/gdpr/audit/gdpr_20240112_001_corrections.log"
+    },
+    "compliance_officer": 101,
+    "notes": [
+      "Identity document verified",
+      "Corrections validated against supporting documents",
+      "Profile updated across all systems",
+      "Dependent calculations recalculated"
+    ],
+    "attachments": [
+      "/gdpr/attachments/gdpr_20240112_001_identity_verification.pdf",
+      "/gdpr/attachments/gdpr_20240112_001_correction_summary.pdf"
+    ]
+  },
+  {
+    "request_id": "gdpr_20240110_001",
+    "user_id": 5,
+    "request_type": "erasure",
+    "data_categories": ["profile", "water_logs", "social_data", "messages", "analytics"],
+    "reason": "I no longer want to use the service and want all my data deleted",
+    "legal_basis": "Article 17 - Right to erasure ('right to be forgotten')",
+    "verification_method": "multi_factor_authentication",
+    "verification_data": {
+      "email_verification": true,
+      "sms_verification": true,
+      "security_questions": true,
+      "final_confirmation": true,
+      "cooling_off_period_days": 7
+    },
+    "status": "completed",
+    "priority": "urgent",
+    "deadline": "2024-02-09T11:20:00Z",
+    "submitted_at": "2024-01-10T11:20:00Z",
+    "processed_at": "2024-01-17T10:00:00Z",
+    "completed_at": "2024-01-25T15:30:00Z",
+    "response_data": {
+      "deletion_summary": {
+        "profile_deleted": true,
+        "water_logs_deleted": 2340,
+        "social_data_deleted": true,
+        "messages_deleted": 156,
+        "analytics_anonymized": true,
+        "backups_purged": true
+      },
+      "retention_exceptions": [
+        {
+          "data_type": "financial_records",
+          "retention_reason": "Legal requirement - tax records",
+          "retention_period": "7 years",
+          "legal_basis": "Tax legislation"
+        }
+      ],
+      "deletion_certificate": "/gdpr/certificates/gdpr_20240110_001_deletion.pdf"
+    },
+    "compliance_officer": 102,
+    "notes": [
+      "Multi-factor authentication completed",
+      "7-day cooling off period observed",
+      "Comprehensive deletion executed",
+      "Legal retention requirements applied",
+      "Deletion certificate issued"
+    ],
+    "attachments": [
+      "/gdpr/attachments/gdpr_20240110_001_deletion_plan.pdf",
+      "/gdpr/attachments/gdpr_20240110_001_retention_analysis.pdf"
+    ]
+  },
+  {
+    "request_id": "gdpr_20240108_001",
+    "user_id": 7,
+    "request_type": "portability",
+    "data_categories": ["profile", "water_logs", "health_goals", "achievements", "preferences"],
+    "reason": "I want to transfer my data to another health tracking service",
+    "legal_basis": "Article 20 - Right to data portability",
+    "verification_method": "email_verification",
+    "verification_data": {
+      "email": "user7@example.com",
+      "verification_code": "PORT789012",
+      "destination_service": "HealthTracker Pro",
+      "api_compatibility": "confirmed"
+    },
+    "status": "completed",
+    "priority": "normal",
+    "deadline": "2024-02-07T16:30:00Z",
+    "submitted_at": "2024-01-08T16:30:00Z",
+    "processed_at": "2024-01-10T11:15:00Z",
+    "completed_at": "2024-01-12T14:45:00Z",
+    "response_data": {
+      "export_format": "json",
+      "structured_data": true,
+      "machine_readable": true,
+      "api_compatible": true,
+      "file_size_bytes": 8388608,
+      "download_url": "/gdpr/portability/gdpr_20240108_001/download",
+      "verification_hash": "sha256:a1b2c3d4e5f6...",
+      "digital_signature": "RSA:signature_data...",
+      "transfer_instructions": "/gdpr/instructions/gdpr_20240108_001_transfer.pdf"
+    },
+    "compliance_officer": 103,
+    "notes": [
+      "Data portability request verified",
+      "Structured export generated",
+      "API compatibility confirmed",
+      "Transfer instructions provided",
+      "Digital signature applied"
+    ],
+    "attachments": [
+      "/gdpr/attachments/gdpr_20240108_001_portability_manifest.json",
+      "/gdpr/attachments/gdpr_20240108_001_api_documentation.pdf"
+    ]
+  },
+  {
+    "request_id": "gdpr_20240105_001",
+    "user_id": 9,
+    "request_type": "restriction",
+    "data_categories": ["analytics", "social_data", "location_data"],
+    "reason": "I dispute the accuracy of location data and want processing restricted until resolved",
+    "legal_basis": "Article 18 - Right to restriction of processing",
+    "verification_method": "email_verification",
+    "verification_data": {
+      "email": "user9@example.com",
+      "verification_code": "REST345678",
+      "dispute_details": "Location data shows impossible travel patterns",
+      "evidence_provided": true
+    },
+    "status": "active",
+    "priority": "high",
+    "deadline": "2024-02-04T13:10:00Z",
+    "submitted_at": "2024-01-05T13:10:00Z",
+    "processed_at": "2024-01-06T09:45:00Z",
+    "completed_at": null,
+    "response_data": {
+      "restriction_applied": true,
+      "restricted_processing": [
+        "location_based_analytics",
+        "social_location_sharing",
+        "location_recommendations"
+      ],
+      "investigation_status": "ongoing",
+      "estimated_resolution": "2024-01-20T00:00:00Z",
+      "interim_measures": [
+        "Location data flagged as disputed",
+        "Analytics processing suspended",
+        "Location sharing disabled"
+      ]
+    },
+    "compliance_officer": 101,
+    "notes": [
+      "Restriction request verified",
+      "Location data flagged for review",
+      "Processing restrictions implemented",
+      "Investigation initiated",
+      "User notified of interim measures"
+    ],
+    "attachments": [
+      "/gdpr/attachments/gdpr_20240105_001_dispute_evidence.pdf",
+      "/gdpr/attachments/gdpr_20240105_001_restriction_notice.pdf"
+    ]
+  },
+  {
+    "request_id": "gdpr_20240103_001",
+    "user_id": 2,
+    "request_type": "objection",
+    "data_categories": ["analytics", "preferences", "recommendations"],
+    "reason": "I object to automated decision-making for health recommendations",
+    "legal_basis": "Article 21 - Right to object",
+    "verification_method": "email_verification",
+    "verification_data": {
+      "email": "user2@example.com",
+      "verification_code": "OBJ567890",
+      "objection_scope": "automated_recommendations",
+      "alternative_preferences": "manual_recommendations_only"
+    },
+    "status": "completed",
+    "priority": "normal",
+    "deadline": "2024-02-02T09:25:00Z",
+    "submitted_at": "2024-01-03T09:25:00Z",
+    "processed_at": "2024-01-04T14:30:00Z",
+    "completed_at": "2024-01-08T11:15:00Z",
+    "response_data": {
+      "objection_upheld": true,
+      "processing_stopped": [
+        "automated_health_recommendations",
+        "ai_powered_insights",
+        "predictive_analytics"
+      ],
+      "alternative_services": [
+        "manual_goal_setting",
+        "basic_progress_tracking",
+        "community_recommendations"
+      ],
+      "settings_updated": true,
+      "user_preferences": {
+        "automated_recommendations": false,
+        "manual_recommendations": true,
+        "ai_insights": false,
+        "basic_analytics": true
+      }
+    },
+    "compliance_officer": 102,
+    "notes": [
+      "Objection to automated processing verified",
+      "Legitimate interest assessment conducted",
+      "Objection upheld - no overriding legitimate interests",
+      "Alternative services offered",
+      "User preferences updated"
+    ],
+    "attachments": [
+      "/gdpr/attachments/gdpr_20240103_001_objection_assessment.pdf",
+      "/gdpr/attachments/gdpr_20240103_001_alternative_services.pdf"
+    ]
+  },
+  {
+    "request_id": "gdpr_20240101_001",
+    "user_id": 4,
+    "request_type": "access",
+    "data_categories": ["profile", "water_logs", "device_data", "location_data", "biometric_data"],
+    "reason": "Annual review of personal data for privacy audit",
+    "legal_basis": "Article 15 - Right of access by the data subject",
+    "verification_method": "identity_document",
+    "verification_data": {
+      "document_type": "driver_license",
+      "document_number": "DL987654321",
+      "verification_status": "verified",
+      "verified_by": "compliance_officer_103",
+      "audit_purpose": true
+    },
+    "status": "processing",
+    "priority": "normal",
+    "deadline": "2024-01-31T12:00:00Z",
+    "submitted_at": "2024-01-01T12:00:00Z",
+    "processed_at": "2024-01-02T10:30:00Z",
+    "completed_at": null,
+    "response_data": {
+      "compilation_status": "in_progress",
+      "estimated_completion": "2024-01-25T00:00:00Z",
+      "data_sources_identified": 12,
+      "data_sources_processed": 8,
+      "preliminary_record_count": {
+        "profile_records": 1,
+        "water_log_records": 3456,
+        "device_data_records": 789,
+        "location_records": 2341,
+        "biometric_records": 567
+      }
+    },
+    "compliance_officer": 103,
+    "notes": [
+      "Annual privacy audit request",
+      "Identity verification completed",
+      "Comprehensive data compilation in progress",
+      "Multiple data sources being processed",
+      "Extended timeline due to data volume"
+    ],
+    "attachments": [
+      "/gdpr/attachments/gdpr_20240101_001_audit_scope.pdf"
+    ]
+  },
+  {
+    "request_id": "gdpr_20231228_001",
+    "user_id": 6,
+    "request_type": "rectification",
+    "data_categories": ["profile", "health_goals", "medical_data"],
+    "reason": "Medical information needs updating after recent health changes",
+    "legal_basis": "Article 16 - Right to rectification",
+    "verification_method": "medical_document",
+    "verification_data": {
+      "document_type": "medical_report",
+      "healthcare_provider": "City General Hospital",
+      "document_date": "2023-12-20",
+      "verification_status": "verified",
+      "medical_professional_contact": "dr.smith@citygeneral.com"
+    },
+    "status": "pending",
+    "priority": "high",
+    "deadline": "2024-01-27T15:45:00Z",
+    "submitted_at": "2023-12-28T15:45:00Z",
+    "processed_at": null,
+    "completed_at": null,
+    "response_data": null,
+    "compliance_officer": null,
+    "notes": [
+      "Medical documentation submitted",
+      "Awaiting medical professional verification",
+      "High priority due to health-related changes"
+    ],
+    "attachments": [
+      "/gdpr/attachments/gdpr_20231228_001_medical_report.pdf",
+      "/gdpr/attachments/gdpr_20231228_001_health_changes.pdf"
+    ]
+  },
+  {
+    "request_id": "gdpr_20231225_001",
+    "user_id": 8,
+    "request_type": "portability",
+    "data_categories": ["water_logs", "nutrition_data", "workout_data", "sleep_data"],
+    "reason": "Switching to a new comprehensive health platform",
+    "legal_basis": "Article 20 - Right to data portability",
+    "verification_method": "email_verification",
+    "verification_data": {
+      "email": "user8@example.com",
+      "verification_code": "PORT123789",
+      "destination_platform": "TotalHealth360",
+      "migration_timeline": "2024-01-15"
+    },
+    "status": "pending",
+    "priority": "normal",
+    "deadline": "2024-01-24T20:30:00Z",
+    "submitted_at": "2023-12-25T20:30:00Z",
+    "processed_at": null,
+    "completed_at": null,
+    "response_data": null,
+    "compliance_officer": null,
+    "notes": [
+      "Platform migration request",
+      "Comprehensive health data portability",
+      "Awaiting processing queue"
+    ],
+    "attachments": []
+  },
+  {
+    "request_id": "gdpr_20231220_001",
+    "user_id": 10,
+    "request_type": "erasure",
+    "data_categories": ["social_data", "messages", "activity_feed"],
+    "reason": "Want to remove all social interactions while keeping health data",
+    "legal_basis": "Article 17 - Right to erasure ('right to be forgotten')",
+    "verification_method": "email_verification",
+    "verification_data": {
+      "email": "user10@example.com",
+      "verification_code": "ERASE456123",
+      "partial_deletion": true,
+      "retention_preferences": ["health_data", "personal_goals"]
+    },
+    "status": "completed",
+    "priority": "normal",
+    "deadline": "2024-01-19T14:15:00Z",
+    "submitted_at": "2023-12-20T14:15:00Z",
+    "processed_at": "2023-12-22T09:30:00Z",
+    "completed_at": "2023-12-28T16:45:00Z",
+    "response_data": {
+      "partial_deletion_summary": {
+        "social_data_deleted": true,
+        "messages_deleted": 234,
+        "activity_feed_deleted": true,
+        "friend_connections_removed": 45,
+        "health_data_retained": true,
+        "personal_goals_retained": true
+      },
+      "anonymization_applied": [
+        "historical_social_references",
+        "aggregated_community_statistics"
+      ],
+      "deletion_certificate": "/gdpr/certificates/gdpr_20231220_001_partial_deletion.pdf"
+    },
+    "compliance_officer": 102,
+    "notes": [
+      "Partial deletion request processed",
+      "Social data removed while preserving health data",
+      "Anonymization applied to historical references",
+      "User preferences respected",
+      "Partial deletion certificate issued"
+    ],
+    "attachments": [
+      "/gdpr/attachments/gdpr_20231220_001_deletion_scope.pdf",
+      "/gdpr/attachments/gdpr_20231220_001_retention_plan.pdf"
+    ]
+  }
+] 

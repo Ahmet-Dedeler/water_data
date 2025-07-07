@@ -1,0 +1,62 @@
+{
+    "8": {
+        "name": "Bromide",
+        "benefits": null,
+        "risks": "At very high doses, bromide can cause neurological effects"
+    },
+    "17": {
+        "name": "Silica",
+        "benefits": "None",
+        "risks": null
+    },
+    "20": {
+        "name": "Arsenic",
+        "benefits": null,
+        "risks": "Carcinogenic, neurotoxic, increased risk of cardiovascular disease, skin lesions, reproductive toxicity, increased risk of diabetes, developmental effects"
+    },
+    "21": {
+        "name": "Barium",
+        "benefits": null,
+        "risks": "Can lead to increased blood pressure, heart and nervous system problems, and long-term exposure may cause severe health effects like kidney damage and impacts on other organs."
+    },
+    "22": {
+        "name": "Fluoride",
+        "benefits": null,
+        "risks": "Can cause dental and skeletal fluorosis, affecting teeth and bone health, and may potentially impact cognitive development in children."
+    },
+    "41": {
+        "name": "Calcium",
+        "benefits": "Supports bone health, essential for muscle function, vital for nerve transmission, important for cardiovascular health",
+        "risks": null
+    },
+    "42": {
+        "name": "Magnesium",
+        "benefits": "Supports energy metabolism, improves muscle and nerve function, promotes bone health, helps regulate blood pressure, may reduce risk of type 2 diabetes, supports cardiovascular health",
+        "risks": null
+    },
+    "43": {
+        "name": "Potassium",
+        "benefits": "Supports cardiovascular health, helps regulate blood pressure, essential for nerve and muscle function, reduces risk of stroke",
+        "risks": null
+    },
+    "45": {
+        "name": "Sodium",
+        "benefits": "Essential electrolyte, supports nerve function, maintains fluid balance",
+        "risks": null
+    },
+    "46": {
+        "name": "Manganese",
+        "benefits": "Essential for enzyme function, bone health, antioxidant defense, metabolism of nutrients",
+        "risks": null
+    },
+    "77": {
+        "name": "Boron",
+        "benefits": "Supports bone health, regulates inflammatory response, assists in mineral metabolism, may benefit cognitive function",
+        "risks": null
+    },
+    "82": {
+        "name": "Iron",
+        "benefits": "Prevents iron deficiency anemia, supports cognitive development, essential for oxygen transport, supports immune function",
+        "risks": null
+    }
+} 

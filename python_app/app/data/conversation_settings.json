@@ -1,0 +1,152 @@
+[
+  {
+    "conversation_id": 1,
+    "user_id": 1,
+    "is_muted": false,
+    "notifications_enabled": true,
+    "custom_name": null,
+    "is_archived": false,
+    "last_read_message_id": 3,
+    "last_read_at": "2024-01-15T14:35:00"
+  },
+  {
+    "conversation_id": 1,
+    "user_id": 2,
+    "is_muted": false,
+    "notifications_enabled": true,
+    "custom_name": null,
+    "is_archived": false,
+    "last_read_message_id": 2,
+    "last_read_at": "2024-01-15T10:15:00"
+  },
+  {
+    "conversation_id": 2,
+    "user_id": 1,
+    "is_muted": false,
+    "notifications_enabled": true,
+    "custom_name": "Challenge Buddy",
+    "is_archived": false,
+    "last_read_message_id": 7,
+    "last_read_at": "2024-01-15T16:50:00"
+  },
+  {
+    "conversation_id": 2,
+    "user_id": 3,
+    "is_muted": false,
+    "notifications_enabled": true,
+    "custom_name": null,
+    "is_archived": false,
+    "last_read_message_id": 6,
+    "last_read_at": "2024-01-15T15:15:00"
+  },
+  {
+    "conversation_id": 3,
+    "user_id": 2,
+    "is_muted": false,
+    "notifications_enabled": true,
+    "custom_name": null,
+    "is_archived": false,
+    "last_read_message_id": 10,
+    "last_read_at": "2024-01-15T09:35:00"
+  },
+  {
+    "conversation_id": 3,
+    "user_id": 3,
+    "is_muted": false,
+    "notifications_enabled": true,
+    "custom_name": null,
+    "is_archived": false,
+    "last_read_message_id": 10,
+    "last_read_at": "2024-01-15T09:35:00"
+  },
+  {
+    "conversation_id": 4,
+    "user_id": 1,
+    "is_muted": false,
+    "notifications_enabled": true,
+    "custom_name": null,
+    "is_archived": false,
+    "last_read_message_id": 16,
+    "last_read_at": "2024-01-15T17:05:00"
+  },
+  {
+    "conversation_id": 4,
+    "user_id": 2,
+    "is_muted": false,
+    "notifications_enabled": true,
+    "custom_name": null,
+    "is_archived": false,
+    "last_read_message_id": 15,
+    "last_read_at": "2024-01-15T16:35:00"
+  },
+  {
+    "conversation_id": 4,
+    "user_id": 3,
+    "is_muted": false,
+    "notifications_enabled": true,
+    "custom_name": null,
+    "is_archived": false,
+    "last_read_message_id": 14,
+    "last_read_at": "2024-01-15T16:20:00"
+  },
+  {
+    "conversation_id": 4,
+    "user_id": 4,
+    "is_muted": true,
+    "notifications_enabled": false,
+    "custom_name": "My Hydration Group",
+    "is_archived": false,
+    "last_read_message_id": 12,
+    "last_read_at": "2024-01-15T14:00:00"
+  },
+  {
+    "conversation_id": 5,
+    "user_id": 1,
+    "is_muted": false,
+    "notifications_enabled": true,
+    "custom_name": null,
+    "is_archived": false,
+    "last_read_message_id": 17,
+    "last_read_at": "2024-01-15T13:10:00"
+  },
+  {
+    "conversation_id": 5,
+    "user_id": 4,
+    "is_muted": false,
+    "notifications_enabled": true,
+    "custom_name": null,
+    "is_archived": false,
+    "last_read_message_id": 18,
+    "last_read_at": "2024-01-15T13:20:00"
+  },
+  {
+    "conversation_id": 6,
+    "user_id": 2,
+    "is_muted": false,
+    "notifications_enabled": true,
+    "custom_name": null,
+    "is_archived": false,
+    "last_read_message_id": 24,
+    "last_read_at": "2024-01-14T20:35:00"
+  },
+  {
+    "conversation_id": 6,
+    "user_id": 3,
+    "is_muted": false,
+    "notifications_enabled": true,
+    "custom_name": "Weekend Squad",
+    "is_archived": false,
+    "last_read_message_id": 24,
+    "last_read_at": "2024-01-14T20:35:00"
+  },
+  {
+    "conversation_id": 6,
+    "user_id": 5,
+    "is_muted": false,
+    "notifications_enabled": true,
+    "custom_name": null,
+    "is_archived": false,
+    "last_read_message_id": 23,
+    "last_read_at": "2024-01-14T20:05:00"
+  }
+] 

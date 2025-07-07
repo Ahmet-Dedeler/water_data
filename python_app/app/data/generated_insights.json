@@ -1,0 +1,150 @@
+[
+  {
+    "id": "insight_1",
+    "insight_type": "positive",
+    "title": "Outstanding Hydration Progress!",
+    "description": "Your water intake has increased by 25% over the past week, showing excellent consistency and dedication to your health goals.",
+    "metric": "water_intake",
+    "confidence_score": 0.92,
+    "action_items": [
+      "Continue your current hydration routine",
+      "Consider setting a higher daily goal",
+      "Share your success with friends for motivation"
+    ],
+    "related_data": {
+      "trend_percentage": 25.0,
+      "consistency_score": 0.88
+    },
+    "created_at": "2024-01-16T10:00:00"
+  },
+  {
+    "id": "insight_2",
+    "insight_type": "achievement",
+    "title": "Goal Completion Master!",
+    "description": "You've achieved an impressive 98.5% average goal completion rate over the past month. This puts you in the top 10% of users!",
+    "metric": "goal_completion",
+    "confidence_score": 0.95,
+    "action_items": [
+      "Consider increasing your daily goal by 10%",
+      "Celebrate this achievement!",
+      "Share your success strategy with friends"
+    ],
+    "related_data": {
+      "completion_rate": 98.5,
+      "percentile_rank": 90
+    },
+    "created_at": "2024-01-16T09:30:00"
+  },
+  {
+    "id": "insight_3",
+    "insight_type": "recommendation",
+    "title": "Weekend Hydration Opportunity",
+    "description": "Your data shows a 15% decrease in water intake on weekends. Maintaining consistency across all days could boost your overall health metrics.",
+    "metric": "water_intake",
+    "confidence_score": 0.78,
+    "action_items": [
+      "Set weekend-specific reminders",
+      "Plan hydration activities for leisure time",
+      "Keep a water bottle visible during weekend activities"
+    ],
+    "related_data": {
+      "weekend_decrease": 15.0,
+      "weekday_average": 2450,
+      "weekend_average": 2080
+    },
+    "created_at": "2024-01-16T09:00:00"
+  },
+  {
+    "id": "insight_4",
+    "insight_type": "positive",
+    "title": "Social Engagement Champion!",
+    "description": "Your community engagement has tripled this month! You're inspiring others and building strong hydration habits together.",
+    "metric": "social_engagement",
+    "confidence_score": 0.87,
+    "action_items": [
+      "Keep encouraging your friends!",
+      "Consider starting a hydration challenge",
+      "Your positive engagement motivates others"
+    ],
+    "related_data": {
+      "engagement_increase": 200.0,
+      "friends_influenced": 8
+    },
+    "created_at": "2024-01-16T08:45:00"
+  },
+  {
+    "id": "insight_5",
+    "insight_type": "neutral",
+    "title": "Interesting Pattern Discovered",
+    "description": "There's a strong positive correlation (0.73) between your social engagement and goal completion rates. Community support seems to boost your performance!",
+    "metric": "social_engagement",
+    "confidence_score": 0.81,
+    "action_items": [
+      "Leverage social features when motivation is low",
+      "Engage more on days when you need extra push",
+      "Consider joining group challenges"
+    ],
+    "related_data": {
+      "correlation_coefficient": 0.73,
+      "statistical_significance": true
+    },
+    "created_at": "2024-01-16T08:15:00"
+  },
+  {
+    "id": "insight_6",
+    "insight_type": "warning",
+    "title": "Afternoon Hydration Dip",
+    "description": "Your hydration tends to drop significantly between 2-4 PM. This could affect your energy levels and overall daily goal achievement.",
+    "metric": "water_intake",
+    "confidence_score": 0.75,
+    "action_items": [
+      "Set a 2 PM hydration reminder",
+      "Keep a water bottle at your workspace",
+      "Try flavored water or herbal tea in the afternoon"
+    ],
+    "related_data": {
+      "afternoon_decrease": 30.0,
+      "peak_hours": [10, 11, 16, 17],
+      "low_hours": [14, 15]
+    },
+    "created_at": "2024-01-16T07:30:00"
+  },
+  {
+    "id": "insight_7",
+    "insight_type": "positive",
+    "title": "Remarkable Consistency Streak!",
+    "description": "You've maintained consistent hydration habits for 14 consecutive days with less than 5% daily variation. This level of consistency is exceptional!",
+    "metric": "water_intake",
+    "confidence_score": 0.94,
+    "action_items": [
+      "Your routine is working perfectly - stick with it!",
+      "Document what makes your routine successful",
+      "Consider mentoring friends who struggle with consistency"
+    ],
+    "related_data": {
+      "consistency_streak": 14,
+      "variation_coefficient": 0.04,
+      "habit_strength": 0.96
+    },
+    "created_at": "2024-01-16T07:00:00"
+  },
+  {
+    "id": "insight_8",
+    "insight_type": "recommendation",
+    "title": "Caffeine Balance Opportunity",
+    "description": "Your caffeine intake peaks at 380mg on days when water intake is below average. Balancing caffeine with extra hydration could optimize your energy levels.",
+    "metric": "caffeine_intake",
+    "confidence_score": 0.69,
+    "action_items": [
+      "Add 200ml water for every coffee consumed",
+      "Switch to decaf options after 2 PM",
+      "Monitor how caffeine affects your hydration goals"
+    ],
+    "related_data": {
+      "caffeine_water_correlation": -0.45,
+      "average_caffeine": 280,
+      "optimal_ratio": "1:2 caffeine to water"
+    },
+    "created_at": "2024-01-15T20:00:00"
+  }
+] 

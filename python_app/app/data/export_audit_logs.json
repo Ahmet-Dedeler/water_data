@@ -1,0 +1,372 @@
+[
+  {
+    "log_id": "log_001",
+    "user_id": 1,
+    "action": "export_requested",
+    "export_id": "exp_001",
+    "ip_address": "192.168.1.100",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "timestamp": "2024-01-15T10:30:00Z",
+    "details": {
+      "export_format": "json",
+      "data_categories": ["water_logs", "health_goals", "achievements"],
+      "date_range": "2024-01-01 to 2024-01-31",
+      "privacy_level": "private"
+    }
+  },
+  {
+    "log_id": "log_002",
+    "user_id": 1,
+    "action": "export_completed",
+    "export_id": "exp_001",
+    "ip_address": "192.168.1.100",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "timestamp": "2024-01-15T10:34:23Z",
+    "details": {
+      "file_size_bytes": 2048576,
+      "processing_time_seconds": 263,
+      "records_exported": 1247
+    }
+  },
+  {
+    "log_id": "log_003",
+    "user_id": 1,
+    "action": "export_downloaded",
+    "export_id": "exp_001",
+    "ip_address": "192.168.1.100",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "timestamp": "2024-01-15T10:45:12Z",
+    "details": {
+      "download_method": "direct_download",
+      "file_format": "json"
+    }
+  },
+  {
+    "log_id": "log_004",
+    "user_id": 2,
+    "action": "export_requested",
+    "export_id": "exp_002",
+    "ip_address": "10.0.0.25",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+    "timestamp": "2024-01-16T14:20:00Z",
+    "details": {
+      "export_format": "csv",
+      "data_categories": ["water_logs", "social_data"],
+      "date_range": "2024-01-01 to 2024-01-15",
+      "privacy_level": "private",
+      "password_protected": true
+    }
+  },
+  {
+    "log_id": "log_005",
+    "user_id": 2,
+    "action": "export_completed",
+    "export_id": "exp_002",
+    "ip_address": "10.0.0.25",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+    "timestamp": "2024-01-16T14:23:45Z",
+    "details": {
+      "file_size_bytes": 1536000,
+      "processing_time_seconds": 225,
+      "records_exported": 892
+    }
+  },
+  {
+    "log_id": "log_006",
+    "user_id": 2,
+    "action": "export_downloaded",
+    "export_id": "exp_002",
+    "ip_address": "10.0.0.25",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+    "timestamp": "2024-01-16T14:30:18Z",
+    "details": {
+      "download_method": "direct_download",
+      "file_format": "csv",
+      "password_verified": true
+    }
+  },
+  {
+    "log_id": "log_007",
+    "user_id": 3,
+    "action": "export_requested",
+    "export_id": "exp_003",
+    "ip_address": "172.16.0.50",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36",
+    "timestamp": "2024-01-17T09:15:00Z",
+    "details": {
+      "export_format": "excel",
+      "data_categories": ["water_logs", "health_goals", "achievements", "analytics"],
+      "date_range": "2023-12-01 to 2024-01-31",
+      "privacy_level": "private",
+      "include_visualizations": true
+    }
+  },
+  {
+    "log_id": "log_008",
+    "user_id": 1,
+    "action": "export_requested",
+    "export_id": "exp_004",
+    "ip_address": "192.168.1.100",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "timestamp": "2024-01-18T16:45:00Z",
+    "details": {
+      "export_format": "pdf",
+      "data_categories": ["water_logs", "health_goals"],
+      "date_range": "2024-01-01 to 2024-01-17",
+      "privacy_level": "private",
+      "include_visualizations": true
+    }
+  },
+  {
+    "log_id": "log_009",
+    "user_id": 1,
+    "action": "export_completed",
+    "export_id": "exp_004",
+    "ip_address": "192.168.1.100",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "timestamp": "2024-01-18T16:48:12Z",
+    "details": {
+      "file_size_bytes": 5242880,
+      "processing_time_seconds": 192,
+      "records_exported": 456,
+      "pages_generated": 8
+    }
+  },
+  {
+    "log_id": "log_010",
+    "user_id": 4,
+    "action": "gdpr_request_created",
+    "export_id": null,
+    "ip_address": "203.0.113.45",
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15",
+    "timestamp": "2024-01-19T11:30:00Z",
+    "details": {
+      "request_type": "access",
+      "request_id": "gdpr_001",
+      "data_categories": ["profile", "water_logs", "health_goals", "achievements", "social_data", "messages", "analytics", "preferences"],
+      "verification_method": "email_verification"
+    }
+  },
+  {
+    "log_id": "log_011",
+    "user_id": 4,
+    "action": "export_requested",
+    "export_id": "exp_005",
+    "ip_address": "203.0.113.45",
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15",
+    "timestamp": "2024-01-19T11:30:00Z",
+    "details": {
+      "export_format": "json",
+      "data_categories": ["profile", "water_logs", "preferences"],
+      "privacy_level": "private",
+      "gdpr_request": true,
+      "request_id": "gdpr_001"
+    }
+  },
+  {
+    "log_id": "log_012",
+    "user_id": 4,
+    "action": "export_failed",
+    "export_id": "exp_005",
+    "ip_address": "203.0.113.45",
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15",
+    "timestamp": "2024-01-19T11:32:15Z",
+    "details": {
+      "error_message": "Data access error: Unable to retrieve user preferences",
+      "error_code": "DATA_ACCESS_ERROR",
+      "retry_possible": true
+    }
+  },
+  {
+    "log_id": "log_013",
+    "user_id": 5,
+    "action": "export_requested",
+    "export_id": "exp_006",
+    "ip_address": "198.51.100.75",
+    "user_agent": "Mozilla/5.0 (Android 14; Mobile; rv:109.0) Gecko/109.0 Firefox/109.0",
+    "timestamp": "2024-01-20T13:00:00Z",
+    "details": {
+      "export_format": "xml",
+      "data_categories": ["water_logs", "achievements", "social_data"],
+      "date_range": "2024-01-10 to 2024-01-20",
+      "privacy_level": "friends_only",
+      "password_protected": true
+    }
+  },
+  {
+    "log_id": "log_014",
+    "user_id": 5,
+    "action": "export_completed",
+    "export_id": "exp_006",
+    "ip_address": "198.51.100.75",
+    "user_agent": "Mozilla/5.0 (Android 14; Mobile; rv:109.0) Gecko/109.0 Firefox/109.0",
+    "timestamp": "2024-01-20T13:04:18Z",
+    "details": {
+      "file_size_bytes": 3145728,
+      "processing_time_seconds": 258,
+      "records_exported": 1156
+    }
+  },
+  {
+    "log_id": "log_015",
+    "user_id": 5,
+    "action": "export_downloaded",
+    "export_id": "exp_006",
+    "ip_address": "198.51.100.75",
+    "user_agent": "Mozilla/5.0 (Android 14; Mobile; rv:109.0) Gecko/109.0 Firefox/109.0",
+    "timestamp": "2024-01-20T13:15:42Z",
+    "details": {
+      "download_method": "direct_download",
+      "file_format": "xml",
+      "password_verified": true
+    }
+  },
+  {
+    "log_id": "log_016",
+    "user_id": 1,
+    "action": "export_deleted",
+    "export_id": "exp_001",
+    "ip_address": "192.168.1.100",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "timestamp": "2024-01-22T08:30:00Z",
+    "details": {
+      "deletion_reason": "user_requested",
+      "file_size_deleted": 2048576,
+      "retention_period_remaining": 5
+    }
+  },
+  {
+    "log_id": "log_017",
+    "user_id": 2,
+    "action": "export_requested",
+    "export_id": "exp_007",
+    "ip_address": "10.0.0.25",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+    "timestamp": "2024-01-21T08:15:00Z",
+    "details": {
+      "export_format": "json",
+      "data_categories": ["messages", "social_data", "activity_feed"],
+      "date_range": "2024-01-15 to 2024-01-21",
+      "privacy_level": "private"
+    }
+  },
+  {
+    "log_id": "log_018",
+    "user_id": 6,
+    "action": "export_requested",
+    "export_id": "exp_008",
+    "ip_address": "172.16.0.100",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0",
+    "timestamp": "2024-01-21T15:30:00Z",
+    "details": {
+      "export_format": "csv",
+      "data_categories": ["water_logs", "health_goals", "device_data"],
+      "date_range": "2024-01-01 to 2024-01-21",
+      "privacy_level": "private",
+      "research_purpose": true
+    }
+  },
+  {
+    "log_id": "log_019",
+    "user_id": 6,
+    "action": "export_completed",
+    "export_id": "exp_008",
+    "ip_address": "172.16.0.100",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0",
+    "timestamp": "2024-01-21T15:33:27Z",
+    "details": {
+      "file_size_bytes": 4194304,
+      "processing_time_seconds": 207,
+      "records_exported": 2341
+    }
+  },
+  {
+    "log_id": "log_020",
+    "user_id": 6,
+    "action": "export_downloaded",
+    "export_id": "exp_008",
+    "ip_address": "172.16.0.100",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0",
+    "timestamp": "2024-01-21T15:40:15Z",
+    "details": {
+      "download_method": "direct_download",
+      "file_format": "csv"
+    }
+  },
+  {
+    "log_id": "log_021",
+    "user_id": 1,
+    "action": "report_requested",
+    "export_id": null,
+    "ip_address": "192.168.1.100",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "timestamp": "2024-01-15T10:30:00Z",
+    "details": {
+      "report_id": "rep_001",
+      "report_type": "comprehensive",
+      "report_format": "pdf",
+      "date_range": "2024-01-01 to 2024-01-31"
+    }
+  },
+  {
+    "log_id": "log_022",
+    "user_id": 1,
+    "action": "report_completed",
+    "export_id": null,
+    "ip_address": "192.168.1.100",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "timestamp": "2024-01-15T10:35:12Z",
+    "details": {
+      "report_id": "rep_001",
+      "file_size_bytes": 1048576,
+      "processing_time_seconds": 312,
+      "pages_generated": 8
+    }
+  },
+  {
+    "log_id": "log_023",
+    "user_id": 1,
+    "action": "report_downloaded",
+    "export_id": null,
+    "ip_address": "192.168.1.100",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "timestamp": "2024-01-15T10:40:28Z",
+    "details": {
+      "report_id": "rep_001",
+      "download_method": "direct_download",
+      "file_format": "pdf"
+    }
+  },
+  {
+    "log_id": "log_024",
+    "user_id": 1,
+    "action": "quota_check",
+    "export_id": null,
+    "ip_address": "192.168.1.100",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "timestamp": "2024-01-24T09:00:00Z",
+    "details": {
+      "daily_exports_used": 2,
+      "daily_limit": 5,
+      "monthly_exports_used": 4,
+      "monthly_limit": 50,
+      "quota_status": "within_limits"
+    }
+  },
+  {
+    "log_id": "log_025",
+    "user_id": 7,
+    "action": "gdpr_request_created",
+    "export_id": null,
+    "ip_address": "203.0.113.200",
+    "user_agent": "Mozilla/5.0 (iPad; CPU OS 17_0 like Mac OS X) AppleWebKit/605.1.15",
+    "timestamp": "2024-01-20T10:30:00Z",
+    "details": {
+      "request_type": "erasure",
+      "request_id": "gdpr_003",
+      "data_categories": ["profile", "water_logs", "health_goals", "achievements", "social_data", "messages", "analytics", "preferences", "device_data", "location_data"],
+      "verification_method": "email_verification",
+      "reason": "Account deletion request"
+    }
+  }
+] 

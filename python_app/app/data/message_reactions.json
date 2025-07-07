@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "message_id": 2,
+    "user_id": 1,
+    "emoji": "👍",
+    "created_at": "2024-01-15T10:12:00"
+  },
+  {
+    "id": 2,
+    "message_id": 3,
+    "user_id": 2,
+    "emoji": "🎉",
+    "created_at": "2024-01-15T14:31:00"
+  },
+  {
+    "id": 3,
+    "message_id": 3,
+    "user_id": 2,
+    "emoji": "👏",
+    "created_at": "2024-01-15T14:32:00"
+  },
+  {
+    "id": 4,
+    "message_id": 6,
+    "user_id": 3,
+    "emoji": "💪",
+    "created_at": "2024-01-15T15:12:00"
+  },
+  {
+    "id": 5,
+    "message_id": 7,
+    "user_id": 1,
+    "emoji": "🔥",
+    "created_at": "2024-01-15T16:46:00"
+  },
+  {
+    "id": 6,
+    "message_id": 8,
+    "user_id": 3,
+    "emoji": "😍",
+    "created_at": "2024-01-15T09:02:30"
+  },
+  {
+    "id": 7,
+    "message_id": 8,
+    "user_id": 3,
+    "emoji": "👍",
+    "created_at": "2024-01-15T09:03:00"
+  },
+  {
+    "id": 8,
+    "message_id": 10,
+    "user_id": 3,
+    "emoji": "♻️",
+    "created_at": "2024-01-15T09:32:30"
+  },
+  {
+    "id": 9,
+    "message_id": 10,
+    "user_id": 3,
+    "emoji": "🌱",
+    "created_at": "2024-01-15T09:33:00"
+  },
+  {
+    "id": 10,
+    "message_id": 11,
+    "user_id": 2,
+    "emoji": "💧",
+    "created_at": "2024-01-10T12:06:00"
+  },
+  {
+    "id": 11,
+    "message_id": 11,
+    "user_id": 3,
+    "emoji": "💧",
+    "created_at": "2024-01-10T12:07:00"
+  },
+  {
+    "id": 12,
+    "message_id": 11,
+    "user_id": 4,
+    "emoji": "💧",
+    "created_at": "2024-01-10T12:08:00"
+  },
+  {
+    "id": 13,
+    "message_id": 11,
+    "user_id": 2,
+    "emoji": "👋",
+    "created_at": "2024-01-10T12:10:00"
+  },
+  {
+    "id": 14,
+    "message_id": 11,
+    "user_id": 4,
+    "emoji": "👋",
+    "created_at": "2024-01-10T12:11:00"
+  },
+  {
+    "id": 15,
+    "message_id": 12,
+    "user_id": 1,
+    "emoji": "💪",
+    "created_at": "2024-01-10T12:31:00"
+  },
+  {
+    "id": 16,
+    "message_id": 12,
+    "user_id": 3,
+    "emoji": "💪",
+    "created_at": "2024-01-10T12:32:00"
+  },
+  {
+    "id": 17,
+    "message_id": 13,
+    "user_id": 1,
+    "emoji": "🏆",
+    "created_at": "2024-01-15T16:01:00"
+  },
+  {
+    "id": 18,
+    "message_id": 13,
+    "user_id": 2,
+    "emoji": "🏆",
+    "created_at": "2024-01-15T16:02:00"
+  },
+  {
+    "id": 19,
+    "message_id": 13,
+    "user_id": 4,
+    "emoji": "🏆",
+    "created_at": "2024-01-15T16:03:00"
+  },
+  {
+    "id": 20,
+    "message_id": 13,
+    "user_id": 1,
+    "emoji": "🎉",
+    "created_at": "2024-01-15T16:04:00"
+  },
+  {
+    "id": 21,
+    "message_id": 13,
+    "user_id": 2,
+    "emoji": "🎉",
+    "created_at": "2024-01-15T16:05:00"
+  },
+  {
+    "id": 22,
+    "message_id": 13,
+    "user_id": 4,
+    "emoji": "👏",
+    "created_at": "2024-01-15T16:06:00"
+  },
+  {
+    "id": 23,
+    "message_id": 15,
+    "user_id": 3,
+    "emoji": "💪",
+    "created_at": "2024-01-15T16:31:00"
+  },
+  {
+    "id": 24,
+    "message_id": 15,
+    "user_id": 3,
+    "emoji": "❤️",
+    "created_at": "2024-01-15T16:32:00"
+  },
+  {
+    "id": 25,
+    "message_id": 16,
+    "user_id": 1,
+    "emoji": "⏰",
+    "created_at": "2024-01-15T17:01:00"
+  },
+  {
+    "id": 26,
+    "message_id": 16,
+    "user_id": 4,
+    "emoji": "⏰",
+    "created_at": "2024-01-15T17:02:00"
+  },
+  {
+    "id": 27,
+    "message_id": 16,
+    "user_id": 3,
+    "emoji": "👍",
+    "created_at": "2024-01-15T17:03:00"
+  },
+  {
+    "id": 28,
+    "message_id": 17,
+    "user_id": 1,
+    "emoji": "😊",
+    "created_at": "2024-01-15T13:06:00"
+  },
+  {
+    "id": 29,
+    "message_id": 19,
+    "user_id": 3,
+    "emoji": "🎯",
+    "created_at": "2024-01-14T18:05:00"
+  },
+  {
+    "id": 30,
+    "message_id": 19,
+    "user_id": 5,
+    "emoji": "🎯",
+    "created_at": "2024-01-14T18:10:00"
+  },
+  {
+    "id": 31,
+    "message_id": 19,
+    "user_id": 5,
+    "emoji": "💪",
+    "created_at": "2024-01-14T18:11:00"
+  },
+  {
+    "id": 32,
+    "message_id": 21,
+    "user_id": 2,
+    "emoji": "💪",
+    "created_at": "2024-01-14T19:01:00"
+  },
+  {
+    "id": 33,
+    "message_id": 21,
+    "user_id": 3,
+    "emoji": "💪",
+    "created_at": "2024-01-14T19:02:00"
+  },
+  {
+    "id": 34,
+    "message_id": 22,
+    "user_id": 3,
+    "emoji": "🏆",
+    "created_at": "2024-01-14T19:31:00"
+  },
+  {
+    "id": 35,
+    "message_id": 22,
+    "user_id": 5,
+    "emoji": "🏆",
+    "created_at": "2024-01-14T19:32:00"
+  },
+  {
+    "id": 36,
+    "message_id": 22,
+    "user_id": 5,
+    "emoji": "🔥",
+    "created_at": "2024-01-14T19:33:00"
+  },
+  {
+    "id": 37,
+    "message_id": 23,
+    "user_id": 2,
+    "emoji": "🚀",
+    "created_at": "2024-01-14T20:01:00"
+  },
+  {
+    "id": 38,
+    "message_id": 23,
+    "user_id": 5,
+    "emoji": "🚀",
+    "created_at": "2024-01-14T20:02:00"
+  },
+  {
+    "id": 39,
+    "message_id": 24,
+    "user_id": 2,
+    "emoji": "😂",
+    "created_at": "2024-01-14T20:31:00"
+  },
+  {
+    "id": 40,
+    "message_id": 24,
+    "user_id": 3,
+    "emoji": "😂",
+    "created_at": "2024-01-14T20:32:00"
+  }
+] 

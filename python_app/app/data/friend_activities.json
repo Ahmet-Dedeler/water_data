@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "user_id": 1,
+    "friend_id": 2,
+    "activity_type": "friend_request_sent",
+    "activity_data": {
+      "message": "Hey! Let's be hydration buddies!"
+    },
+    "message": "Sent a friend request",
+    "privacy_level": "public",
+    "is_milestone": false,
+    "likes_count": 0,
+    "comments_count": 0,
+    "has_liked": false,
+    "created_at": "2024-01-15T10:30:00"
+  },
+  {
+    "id": 2,
+    "user_id": 2,
+    "friend_id": 1,
+    "activity_type": "friend_request_accepted",
+    "activity_data": {
+      "message": "Excited to be hydration buddies!"
+    },
+    "message": "Accepted friend request",
+    "privacy_level": "public",
+    "is_milestone": false,
+    "likes_count": 1,
+    "comments_count": 0,
+    "has_liked": true,
+    "created_at": "2024-01-15T11:45:00"
+  },
+  {
+    "id": 3,
+    "user_id": 1,
+    "friend_id": 3,
+    "activity_type": "friend_request_sent",
+    "activity_data": {
+      "message": null
+    },
+    "message": "Sent a friend request",
+    "privacy_level": "public",
+    "is_milestone": false,
+    "likes_count": 0,
+    "comments_count": 0,
+    "has_liked": false,
+    "created_at": "2024-01-18T09:15:00"
+  },
+  {
+    "id": 4,
+    "user_id": 3,
+    "friend_id": 1,
+    "activity_type": "friend_request_accepted",
+    "activity_data": {
+      "message": "Thanks for the invite!"
+    },
+    "message": "Accepted friend request",
+    "privacy_level": "public",
+    "is_milestone": false,
+    "likes_count": 0,
+    "comments_count": 0,
+    "has_liked": false,
+    "created_at": "2024-01-18T16:30:00"
+  },
+  {
+    "id": 5,
+    "user_id": 4,
+    "friend_id": 1,
+    "activity_type": "friend_request_sent",
+    "activity_data": {
+      "message": "Found you through the leaderboard!"
+    },
+    "message": "Sent a friend request",
+    "privacy_level": "public",
+    "is_milestone": false,
+    "likes_count": 0,
+    "comments_count": 0,
+    "has_liked": false,
+    "created_at": "2024-01-21T13:20:00"
+  },
+  {
+    "id": 6,
+    "user_id": 2,
+    "friend_id": 3,
+    "activity_type": "friend_request_sent",
+    "activity_data": {
+      "message": "Let's motivate each other!"
+    },
+    "message": "Sent a friend request",
+    "privacy_level": "public",
+    "is_milestone": false,
+    "likes_count": 0,
+    "comments_count": 0,
+    "has_liked": false,
+    "created_at": "2024-01-16T11:00:00"
+  },
+  {
+    "id": 7,
+    "user_id": 3,
+    "friend_id": 2,
+    "activity_type": "friend_request_accepted",
+    "activity_data": {
+      "message": "Absolutely! Let's do this!"
+    },
+    "message": "Accepted friend request",
+    "privacy_level": "public",
+    "is_milestone": false,
+    "likes_count": 2,
+    "comments_count": 1,
+    "has_liked": false,
+    "created_at": "2024-01-16T15:30:00"
+  },
+  {
+    "id": 8,
+    "user_id": 5,
+    "friend_id": 1,
+    "activity_type": "friend_request_sent",
+    "activity_data": {
+      "message": "Saw your profile, interested in connecting!"
+    },
+    "message": "Sent a friend request",
+    "privacy_level": "public",
+    "is_milestone": false,
+    "likes_count": 0,
+    "comments_count": 0,
+    "has_liked": false,
+    "created_at": "2024-01-19T14:45:00"
+  },
+  {
+    "id": 9,
+    "user_id": 1,
+    "friend_id": 5,
+    "activity_type": "friend_request_declined",
+    "activity_data": {
+      "message": "Thanks, but keeping my friend list small for now."
+    },
+    "message": "Declined friend request",
+    "privacy_level": "private",
+    "is_milestone": false,
+    "likes_count": 0,
+    "comments_count": 0,
+    "has_liked": false,
+    "created_at": "2024-01-19T18:20:00"
+  }
+] 

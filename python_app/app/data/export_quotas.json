@@ -1,0 +1,82 @@
+[
+  {
+    "user_id": 1,
+    "daily_export_limit": 5,
+    "monthly_export_limit": 50,
+    "max_file_size_mb": 100,
+    "daily_exports_used": 2,
+    "monthly_exports_used": 4,
+    "quota_reset_date": "2024-02-01",
+    "premium_user": false
+  },
+  {
+    "user_id": 2,
+    "daily_export_limit": 5,
+    "monthly_export_limit": 50,
+    "max_file_size_mb": 100,
+    "daily_exports_used": 3,
+    "monthly_exports_used": 8,
+    "quota_reset_date": "2024-02-01",
+    "premium_user": false
+  },
+  {
+    "user_id": 3,
+    "daily_export_limit": 10,
+    "monthly_export_limit": 100,
+    "max_file_size_mb": 500,
+    "daily_exports_used": 1,
+    "monthly_exports_used": 3,
+    "quota_reset_date": "2024-02-01",
+    "premium_user": true
+  },
+  {
+    "user_id": 4,
+    "daily_export_limit": 5,
+    "monthly_export_limit": 50,
+    "max_file_size_mb": 100,
+    "daily_exports_used": 0,
+    "monthly_exports_used": 2,
+    "quota_reset_date": "2024-02-01",
+    "premium_user": false
+  },
+  {
+    "user_id": 5,
+    "daily_export_limit": 5,
+    "monthly_export_limit": 50,
+    "max_file_size_mb": 100,
+    "daily_exports_used": 1,
+    "monthly_exports_used": 5,
+    "quota_reset_date": "2024-02-01",
+    "premium_user": false
+  },
+  {
+    "user_id": 6,
+    "daily_export_limit": 10,
+    "monthly_export_limit": 100,
+    "max_file_size_mb": 500,
+    "daily_exports_used": 2,
+    "monthly_exports_used": 12,
+    "quota_reset_date": "2024-02-01",
+    "premium_user": true
+  },
+  {
+    "user_id": 7,
+    "daily_export_limit": 5,
+    "monthly_export_limit": 50,
+    "max_file_size_mb": 100,
+    "daily_exports_used": 0,
+    "monthly_exports_used": 1,
+    "quota_reset_date": "2024-02-01",
+    "premium_user": false
+  },
+  {
+    "user_id": 8,
+    "daily_export_limit": 5,
+    "monthly_export_limit": 50,
+    "max_file_size_mb": 100,
+    "daily_exports_used": 1,
+    "monthly_exports_used": 1,
+    "quota_reset_date": "2024-02-01",
+    "premium_user": false
+  }
+] 

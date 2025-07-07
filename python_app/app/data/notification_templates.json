@@ -1,0 +1,627 @@
+[
+  {
+    "id": "template_001",
+    "name": "Hydration Reminder - Basic",
+    "description": "Simple hydration reminder for regular water intake",
+    "category": "hydration_reminder",
+    "template_type": "basic",
+    "email_subject": "Time to Hydrate! 💧",
+    "email_body": "Hi {{user_name}},\n\nIt's time for your hydration reminder! You've consumed {{current_intake}}ml today out of your {{daily_goal}}ml goal.\n\nStay hydrated and keep up the great work!\n\nBest regards,\nWater Bottle Tracker Team",
+    "email_html": "<html><body><h2>Time to Hydrate! 💧</h2><p>Hi {{user_name}},</p><p>It's time for your hydration reminder! You've consumed <strong>{{current_intake}}ml</strong> today out of your <strong>{{daily_goal}}ml</strong> goal.</p><p>Stay hydrated and keep up the great work!</p><p>Best regards,<br>Water Bottle Tracker Team</p></body></html>",
+    "sms_content": "💧 Hydration reminder! You've had {{current_intake}}ml today. Goal: {{daily_goal}}ml. Keep it up!",
+    "push_title": "Time to Hydrate!",
+    "push_body": "{{current_intake}}ml / {{daily_goal}}ml today. Stay on track!",
+    "in_app_title": "Hydration Reminder",
+    "in_app_content": "You've consumed {{current_intake}}ml today. Keep going to reach your {{daily_goal}}ml goal!",
+    "variables": {
+      "user_name": "string",
+      "current_intake": "number",
+      "daily_goal": "number",
+      "percentage_complete": "number"
+    },
+    "personalization_rules": {
+      "time_based": {
+        "morning": "Good morning! Start your day with hydration.",
+        "afternoon": "Afternoon hydration check-in!",
+        "evening": "Evening reminder to finish your water goal."
+      },
+      "achievement_based": {
+        "behind_goal": "You're a bit behind your goal. Let's catch up!",
+        "on_track": "Great job staying on track!",
+        "ahead_of_goal": "Amazing! You're ahead of your goal!"
+      }
+    },
+    "localization": {
+      "en": {
+        "title": "Time to Hydrate!",
+        "message": "Stay hydrated and healthy!"
+      },
+      "es": {
+        "title": "¡Hora de Hidratarse!",
+        "message": "¡Mantente hidratado y saludable!"
+      },
+      "fr": {
+        "title": "Il est temps de s'hydrater!",
+        "message": "Restez hydraté et en bonne santé!"
+      }
+    },
+    "media_assets": {
+      "icon": "💧",
+      "image_url": "https://example.com/hydration-icon.png",
+      "sound": "water_drop.mp3"
+    },
+    "interactive_elements": {
+      "buttons": [
+        {
+          "text": "Log Water",
+          "action": "log_water",
+          "style": "primary"
+        },
+        {
+          "text": "Snooze 30min",
+          "action": "snooze",
+          "style": "secondary"
+        }
+      ]
+    },
+    "is_active": true,
+    "is_system": true,
+    "version": "1.0.0",
+    "created_at": "2024-01-15T08:00:00Z",
+    "updated_at": "2024-01-15T08:00:00Z"
+  },
+  {
+    "id": "template_002",
+    "name": "Goal Achievement Celebration",
+    "description": "Celebrate when user reaches their daily hydration goal",
+    "category": "goal_achievement",
+    "template_type": "rich",
+    "email_subject": "🎉 Congratulations! You've reached your hydration goal!",
+    "email_body": "Fantastic work, {{user_name}}!\n\nYou've successfully reached your daily hydration goal of {{daily_goal}}ml! This is your {{streak_days}} day streak.\n\n{{achievement_message}}\n\nKeep up the excellent work!\n\nCheers,\nWater Bottle Tracker Team",
+    "email_html": "<html><body><div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; color: white; text-align: center;'><h1>🎉 Goal Achieved!</h1><p>Fantastic work, {{user_name}}!</p><p>You've successfully reached your daily hydration goal of <strong>{{daily_goal}}ml</strong>!</p><p>This is your <strong>{{streak_days}} day streak</strong>!</p><p>{{achievement_message}}</p><p>Keep up the excellent work!</p></div></body></html>",
+    "sms_content": "🎉 Congratulations {{user_name}}! You've reached your {{daily_goal}}ml goal! {{streak_days}} day streak!",
+    "push_title": "🎉 Goal Achieved!",
+    "push_body": "You've reached your {{daily_goal}}ml goal! {{streak_days}} day streak!",
+    "in_app_title": "🎉 Congratulations!",
+    "in_app_content": "You've successfully reached your daily hydration goal of {{daily_goal}}ml! This is your {{streak_days}} day streak. {{achievement_message}}",
+    "variables": {
+      "user_name": "string",
+      "daily_goal": "number",
+      "streak_days": "number",
+      "achievement_message": "string",
+      "total_intake": "number",
+      "goal_percentage": "number"
+    },
+    "personalization_rules": {
+      "streak_based": {
+        "first_time": "Amazing! You've reached your goal for the first time!",
+        "weekly_streak": "Incredible! You've maintained your goal for a full week!",
+        "monthly_streak": "Outstanding! A full month of consistent hydration!"
+      }
+    },
+    "localization": {
+      "en": {
+        "title": "Goal Achieved!",
+        "message": "Congratulations on reaching your hydration goal!"
+      },
+      "es": {
+        "title": "¡Meta Alcanzada!",
+        "message": "¡Felicitaciones por alcanzar tu meta de hidratación!"
+      }
+    },
+    "media_assets": {
+      "icon": "🎉",
+      "celebration_gif": "https://example.com/celebration.gif",
+      "sound": "celebration.mp3"
+    },
+    "interactive_elements": {
+      "buttons": [
+        {
+          "text": "Share Achievement",
+          "action": "share_achievement",
+          "style": "primary"
+        },
+        {
+          "text": "View Stats",
+          "action": "view_stats",
+          "style": "secondary"
+        }
+      ]
+    },
+    "is_active": true,
+    "is_system": true,
+    "version": "1.2.0",
+    "created_at": "2024-01-15T08:00:00Z",
+    "updated_at": "2024-01-20T10:30:00Z"
+  },
+  {
+    "id": "template_003",
+    "name": "Friend Request Notification",
+    "description": "Notify user when they receive a friend request",
+    "category": "friend_request",
+    "template_type": "interactive",
+    "email_subject": "You have a new friend request from {{sender_name}}",
+    "email_body": "Hi {{user_name}},\n\n{{sender_name}} wants to be your friend on Water Bottle Tracker!\n\n{{sender_name}} has been tracking their hydration for {{sender_days}} days and has achieved {{sender_achievements}} achievements.\n\nConnect with friends to motivate each other and share your hydration journey!\n\nBest regards,\nWater Bottle Tracker Team",
+    "sms_content": "{{sender_name}} sent you a friend request on Water Bottle Tracker! Accept or decline in the app.",
+    "push_title": "New Friend Request",
+    "push_body": "{{sender_name}} wants to be your friend!",
+    "in_app_title": "New Friend Request",
+    "in_app_content": "{{sender_name}} wants to be your friend! They've been tracking hydration for {{sender_days}} days.",
+    "variables": {
+      "user_name": "string",
+      "sender_name": "string",
+      "sender_days": "number",
+      "sender_achievements": "number",
+      "sender_avatar": "string",
+      "request_id": "string"
+    },
+    "personalization_rules": {
+      "mutual_friends": {
+        "has_mutual": "You have {{mutual_count}} mutual friends with {{sender_name}}",
+        "no_mutual": "{{sender_name}} is new to your network"
+      }
+    },
+    "interactive_elements": {
+      "buttons": [
+        {
+          "text": "Accept",
+          "action": "accept_friend_request",
+          "style": "primary",
+          "data": {
+            "request_id": "{{request_id}}"
+          }
+        },
+        {
+          "text": "Decline",
+          "action": "decline_friend_request",
+          "style": "secondary",
+          "data": {
+            "request_id": "{{request_id}}"
+          }
+        },
+        {
+          "text": "View Profile",
+          "action": "view_profile",
+          "style": "tertiary",
+          "data": {
+            "user_id": "{{sender_id}}"
+          }
+        }
+      ]
+    },
+    "is_active": true,
+    "is_system": true,
+    "version": "1.0.0",
+    "created_at": "2024-01-15T08:00:00Z",
+    "updated_at": "2024-01-15T08:00:00Z"
+  },
+  {
+    "id": "template_004",
+    "name": "Health Alert - Dehydration Risk",
+    "description": "Alert user when they are at risk of dehydration",
+    "category": "health_alert",
+    "template_type": "rich",
+    "email_subject": "⚠️ Health Alert: Dehydration Risk Detected",
+    "email_body": "Important Health Notice for {{user_name}},\n\nOur system has detected that you may be at risk of dehydration based on your recent intake patterns.\n\nCurrent Status:\n- Today's intake: {{current_intake}}ml\n- Daily goal: {{daily_goal}}ml\n- Deficit: {{deficit}}ml\n- Time remaining: {{time_remaining}} hours\n\nRecommendations:\n{{recommendations}}\n\nPlease prioritize your hydration immediately.\n\nStay safe and healthy,\nWater Bottle Tracker Health Team",
+    "sms_content": "⚠️ HEALTH ALERT: Dehydration risk detected. You're {{deficit}}ml behind your goal. Please hydrate immediately!",
+    "push_title": "⚠️ Health Alert",
+    "push_body": "Dehydration risk detected. Please hydrate immediately!",
+    "in_app_title": "⚠️ Health Alert: Dehydration Risk",
+    "in_app_content": "You're {{deficit}}ml behind your goal with {{time_remaining}} hours remaining. Please prioritize hydration.",
+    "variables": {
+      "user_name": "string",
+      "current_intake": "number",
+      "daily_goal": "number",
+      "deficit": "number",
+      "time_remaining": "number",
+      "recommendations": "string",
+      "risk_level": "string"
+    },
+    "personalization_rules": {
+      "risk_level": {
+        "low": "Mild dehydration risk. Increase water intake gradually.",
+        "medium": "Moderate dehydration risk. Please hydrate consistently.",
+        "high": "High dehydration risk. Immediate hydration required!"
+      }
+    },
+    "media_assets": {
+      "icon": "⚠️",
+      "alert_sound": "health_alert.mp3",
+      "priority": "high"
+    },
+    "interactive_elements": {
+      "buttons": [
+        {
+          "text": "Log Water Now",
+          "action": "quick_log_water",
+          "style": "primary",
+          "urgent": true
+        },
+        {
+          "text": "Set Reminder",
+          "action": "set_urgent_reminder",
+          "style": "secondary"
+        }
+      ]
+    },
+    "is_active": true,
+    "is_system": true,
+    "version": "1.1.0",
+    "created_at": "2024-01-15T08:00:00Z",
+    "updated_at": "2024-01-18T14:20:00Z"
+  },
+  {
+    "id": "template_005",
+    "name": "Weekly Report Ready",
+    "description": "Notify user when their weekly hydration report is ready",
+    "category": "report_ready",
+    "template_type": "rich",
+    "email_subject": "📊 Your Weekly Hydration Report is Ready!",
+    "email_body": "Hi {{user_name}},\n\nYour weekly hydration report for {{week_range}} is now available!\n\nWeek Highlights:\n- Average daily intake: {{avg_daily_intake}}ml\n- Goal achievement rate: {{goal_achievement_rate}}%\n- Best day: {{best_day}} ({{best_day_intake}}ml)\n- Streak: {{current_streak}} days\n- Improvement: {{improvement_percentage}}% vs last week\n\n{{weekly_insights}}\n\nView your complete report in the app for detailed insights and recommendations.\n\nKeep up the great work!\n\nBest regards,\nWater Bottle Tracker Team",
+    "email_html": "<html><body><div style='background: #f8f9fa; padding: 20px;'><h2>📊 Weekly Hydration Report</h2><p>Hi {{user_name}},</p><p>Your weekly report for <strong>{{week_range}}</strong> is ready!</p><div style='background: white; padding: 15px; border-radius: 8px; margin: 15px 0;'><h3>Week Highlights</h3><ul><li>Average daily intake: <strong>{{avg_daily_intake}}ml</strong></li><li>Goal achievement rate: <strong>{{goal_achievement_rate}}%</strong></li><li>Best day: <strong>{{best_day}} ({{best_day_intake}}ml)</strong></li><li>Current streak: <strong>{{current_streak}} days</strong></li><li>Improvement: <strong>{{improvement_percentage}}%</strong> vs last week</li></ul></div><p>{{weekly_insights}}</p><p>View your complete report in the app for detailed insights!</p></div></body></html>",
+    "sms_content": "📊 Your weekly hydration report is ready! {{goal_achievement_rate}}% goal achievement, {{current_streak}} day streak. Check the app!",
+    "push_title": "📊 Weekly Report Ready",
+    "push_body": "{{goal_achievement_rate}}% goal achievement this week!",
+    "in_app_title": "📊 Weekly Hydration Report",
+    "in_app_content": "Your report for {{week_range}} is ready! {{goal_achievement_rate}}% goal achievement rate with {{current_streak}} day streak.",
+    "variables": {
+      "user_name": "string",
+      "week_range": "string",
+      "avg_daily_intake": "number",
+      "goal_achievement_rate": "number",
+      "best_day": "string",
+      "best_day_intake": "number",
+      "current_streak": "number",
+      "improvement_percentage": "number",
+      "weekly_insights": "string",
+      "report_id": "string"
+    },
+    "personalization_rules": {
+      "performance_based": {
+        "excellent": "Outstanding performance this week! You're a hydration champion!",
+        "good": "Great job this week! You're building excellent habits.",
+        "needs_improvement": "This week showed some challenges. Let's work on consistency!"
+      }
+    },
+    "interactive_elements": {
+      "buttons": [
+        {
+          "text": "View Full Report",
+          "action": "view_report",
+          "style": "primary",
+          "data": {
+            "report_id": "{{report_id}}"
+          }
+        },
+        {
+          "text": "Share Progress",
+          "action": "share_progress",
+          "style": "secondary"
+        },
+        {
+          "text": "Set Goals",
+          "action": "set_weekly_goals",
+          "style": "tertiary"
+        }
+      ]
+    },
+    "is_active": true,
+    "is_system": true,
+    "version": "1.0.0",
+    "created_at": "2024-01-15T08:00:00Z",
+    "updated_at": "2024-01-15T08:00:00Z"
+  },
+  {
+    "id": "template_006",
+    "name": "Challenge Invitation",
+    "description": "Invite user to participate in a hydration challenge",
+    "category": "challenge_invite",
+    "template_type": "interactive",
+    "email_subject": "🏆 You're Invited to the {{challenge_name}} Challenge!",
+    "email_body": "Exciting news, {{user_name}}!\n\nYou've been invited to participate in the {{challenge_name}} challenge!\n\nChallenge Details:\n- Duration: {{challenge_duration}} days\n- Goal: {{challenge_goal}}\n- Participants: {{participant_count}} people\n- Prizes: {{prizes}}\n- Starts: {{start_date}}\n\n{{challenge_description}}\n\nJoin now and compete with friends while building healthy hydration habits!\n\nBest of luck,\nWater Bottle Tracker Team",
+    "sms_content": "🏆 You're invited to the {{challenge_name}} challenge! {{challenge_duration}} days, {{participant_count}} participants. Join in the app!",
+    "push_title": "🏆 Challenge Invitation",
+    "push_body": "Join the {{challenge_name}} challenge with {{participant_count}} participants!",
+    "in_app_title": "🏆 Challenge Invitation",
+    "in_app_content": "You're invited to the {{challenge_name}} challenge! {{challenge_duration}} days with {{participant_count}} participants.",
+    "variables": {
+      "user_name": "string",
+      "challenge_name": "string",
+      "challenge_duration": "number",
+      "challenge_goal": "string",
+      "participant_count": "number",
+      "prizes": "string",
+      "start_date": "string",
+      "challenge_description": "string",
+      "challenge_id": "string",
+      "inviter_name": "string"
+    },
+    "personalization_rules": {
+      "challenge_type": {
+        "individual": "Personal challenge to beat your own records!",
+        "team": "Team up with friends for this group challenge!",
+        "community": "Join the entire community in this challenge!"
+      }
+    },
+    "interactive_elements": {
+      "buttons": [
+        {
+          "text": "Join Challenge",
+          "action": "join_challenge",
+          "style": "primary",
+          "data": {
+            "challenge_id": "{{challenge_id}}"
+          }
+        },
+        {
+          "text": "View Details",
+          "action": "view_challenge_details",
+          "style": "secondary",
+          "data": {
+            "challenge_id": "{{challenge_id}}"
+          }
+        },
+        {
+          "text": "Maybe Later",
+          "action": "remind_later",
+          "style": "tertiary"
+        }
+      ]
+    },
+    "is_active": true,
+    "is_system": true,
+    "version": "1.0.0",
+    "created_at": "2024-01-15T08:00:00Z",
+    "updated_at": "2024-01-15T08:00:00Z"
+  },
+  {
+    "id": "template_007",
+    "name": "System Maintenance Notice",
+    "description": "Notify users about scheduled system maintenance",
+    "category": "system_update",
+    "template_type": "basic",
+    "email_subject": "🔧 Scheduled Maintenance Notice - Water Bottle Tracker",
+    "email_body": "Dear {{user_name}},\n\nWe're writing to inform you about scheduled maintenance for Water Bottle Tracker.\n\nMaintenance Details:\n- Date: {{maintenance_date}}\n- Time: {{maintenance_time}}\n- Duration: {{maintenance_duration}} hours\n- Affected Services: {{affected_services}}\n\nDuring this time, the following features may be temporarily unavailable:\n{{unavailable_features}}\n\nWhat you can do:\n- Log your water intake before maintenance begins\n- Your data will be safely preserved\n- The app will automatically sync once maintenance is complete\n\nWe apologize for any inconvenience and appreciate your patience.\n\nThank you,\nWater Bottle Tracker Team",
+    "sms_content": "🔧 Maintenance scheduled for {{maintenance_date}} at {{maintenance_time}}. Duration: {{maintenance_duration}} hours. App may be temporarily unavailable.",
+    "push_title": "🔧 Maintenance Notice",
+    "push_body": "Scheduled maintenance on {{maintenance_date}} at {{maintenance_time}}",
+    "in_app_title": "🔧 Scheduled Maintenance",
+    "in_app_content": "Maintenance scheduled for {{maintenance_date}} at {{maintenance_time}}. Duration: {{maintenance_duration}} hours.",
+    "variables": {
+      "user_name": "string",
+      "maintenance_date": "string",
+      "maintenance_time": "string",
+      "maintenance_duration": "number",
+      "affected_services": "string",
+      "unavailable_features": "string",
+      "maintenance_id": "string"
+    },
+    "personalization_rules": {
+      "user_timezone": {
+        "convert_time": "Time displayed in user's local timezone"
+      }
+    },
+    "interactive_elements": {
+      "buttons": [
+        {
+          "text": "Set Reminder",
+          "action": "set_maintenance_reminder",
+          "style": "primary"
+        },
+        {
+          "text": "Learn More",
+          "action": "view_maintenance_details",
+          "style": "secondary"
+        }
+      ]
+    },
+    "is_active": true,
+    "is_system": true,
+    "version": "1.0.0",
+    "created_at": "2024-01-15T08:00:00Z",
+    "updated_at": "2024-01-15T08:00:00Z"
+  },
+  {
+    "id": "template_008",
+    "name": "Coaching Tip of the Day",
+    "description": "Daily personalized hydration coaching tip",
+    "category": "coaching_tip",
+    "template_type": "rich",
+    "email_subject": "💡 Today's Hydration Tip: {{tip_title}}",
+    "email_body": "Good {{time_of_day}}, {{user_name}}!\n\nHere's your personalized hydration tip for today:\n\n💡 {{tip_title}}\n\n{{tip_content}}\n\n{{personalized_advice}}\n\nTip Category: {{tip_category}}\nDifficulty: {{difficulty_level}}\nEstimated Impact: {{impact_level}}\n\nTry implementing this tip today and see how it affects your hydration journey!\n\nStay hydrated,\nYour Personal Hydration Coach",
+    "email_html": "<html><body><div style='background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); padding: 20px; color: white;'><h2>💡 Today's Hydration Tip</h2><h3>{{tip_title}}</h3><p>Good {{time_of_day}}, {{user_name}}!</p></div><div style='padding: 20px;'><p>{{tip_content}}</p><div style='background: #f1f3f4; padding: 15px; border-radius: 8px; margin: 15px 0;'><strong>Personalized for you:</strong><br>{{personalized_advice}}</div><p><strong>Category:</strong> {{tip_category}}<br><strong>Difficulty:</strong> {{difficulty_level}}<br><strong>Impact:</strong> {{impact_level}}</p></div></body></html>",
+    "sms_content": "💡 Daily Tip: {{tip_title}} - {{tip_summary}}. Try it today!",
+    "push_title": "💡 Daily Hydration Tip",
+    "push_body": "{{tip_title}} - {{tip_summary}}",
+    "in_app_title": "💡 Today's Hydration Tip",
+    "in_app_content": "{{tip_title}}: {{tip_content}} {{personalized_advice}}",
+    "variables": {
+      "user_name": "string",
+      "time_of_day": "string",
+      "tip_title": "string",
+      "tip_content": "string",
+      "tip_summary": "string",
+      "personalized_advice": "string",
+      "tip_category": "string",
+      "difficulty_level": "string",
+      "impact_level": "string",
+      "tip_id": "string"
+    },
+    "personalization_rules": {
+      "user_level": {
+        "beginner": "Focus on basic hydration habits and simple tips",
+        "intermediate": "Include moderate complexity tips and habit building",
+        "advanced": "Provide advanced optimization and performance tips"
+      },
+      "season_based": {
+        "summer": "Focus on hot weather hydration strategies",
+        "winter": "Emphasize indoor air and heating effects",
+        "spring": "Transition and activity-based hydration",
+        "fall": "Seasonal adjustment and immune support"
+      }
+    },
+    "interactive_elements": {
+      "buttons": [
+        {
+          "text": "Mark as Tried",
+          "action": "mark_tip_tried",
+          "style": "primary",
+          "data": {
+            "tip_id": "{{tip_id}}"
+          }
+        },
+        {
+          "text": "Save Tip",
+          "action": "save_tip",
+          "style": "secondary",
+          "data": {
+            "tip_id": "{{tip_id}}"
+          }
+        },
+        {
+          "text": "More Tips",
+          "action": "view_more_tips",
+          "style": "tertiary"
+        }
+      ]
+    },
+    "is_active": true,
+    "is_system": true,
+    "version": "1.0.0",
+    "created_at": "2024-01-15T08:00:00Z",
+    "updated_at": "2024-01-15T08:00:00Z"
+  },
+  {
+    "id": "template_009",
+    "name": "Weather-Based Hydration Alert",
+    "description": "Weather-specific hydration recommendations",
+    "category": "weather_alert",
+    "template_type": "rich",
+    "email_subject": "🌡️ Weather Alert: Adjust Your Hydration for {{weather_condition}}",
+    "email_body": "Hi {{user_name}},\n\nBased on today's weather conditions, here are your personalized hydration recommendations:\n\nCurrent Weather:\n- Condition: {{weather_condition}}\n- Temperature: {{temperature}}°{{temp_unit}}\n- Humidity: {{humidity}}%\n- UV Index: {{uv_index}}\n\nHydration Recommendations:\n{{weather_recommendations}}\n\nAdjusted Daily Goal: {{adjusted_goal}}ml ({{adjustment_reason}})\n\nStay safe and hydrated!\n\nWeather-Aware Hydration Team",
+    "sms_content": "🌡️ Weather Alert: {{weather_condition}}, {{temperature}}°. Recommended intake: {{adjusted_goal}}ml today. Stay hydrated!",
+    "push_title": "🌡️ Weather Hydration Alert",
+    "push_body": "{{weather_condition}} today. Adjust intake to {{adjusted_goal}}ml",
+    "in_app_title": "🌡️ Weather-Based Hydration",
+    "in_app_content": "{{weather_condition}} with {{temperature}}° temperature. Recommended: {{adjusted_goal}}ml today.",
+    "variables": {
+      "user_name": "string",
+      "weather_condition": "string",
+      "temperature": "number",
+      "temp_unit": "string",
+      "humidity": "number",
+      "uv_index": "number",
+      "weather_recommendations": "string",
+      "adjusted_goal": "number",
+      "adjustment_reason": "string",
+      "location": "string"
+    },
+    "personalization_rules": {
+      "weather_condition": {
+        "hot": "Increase intake due to heat and sweating",
+        "cold": "Maintain intake despite reduced thirst sensation",
+        "humid": "Extra hydration needed for cooling",
+        "dry": "Combat dehydration from low humidity"
+      },
+      "activity_level": {
+        "high": "Significantly increase intake for active days",
+        "moderate": "Moderate increase for typical activity",
+        "low": "Standard adjustment for sedentary days"
+      }
+    },
+    "media_assets": {
+      "weather_icons": {
+        "sunny": "☀️",
+        "cloudy": "☁️",
+        "rainy": "🌧️",
+        "snowy": "❄️",
+        "hot": "🌡️"
+      }
+    },
+    "interactive_elements": {
+      "buttons": [
+        {
+          "text": "Update Goal",
+          "action": "update_daily_goal",
+          "style": "primary",
+          "data": {
+            "new_goal": "{{adjusted_goal}}"
+          }
+        },
+        {
+          "text": "Weather Tips",
+          "action": "view_weather_tips",
+          "style": "secondary"
+        }
+      ]
+    },
+    "is_active": true,
+    "is_system": true,
+    "version": "1.0.0",
+    "created_at": "2024-01-15T08:00:00Z",
+    "updated_at": "2024-01-15T08:00:00Z"
+  },
+  {
+    "id": "template_010",
+    "name": "Milestone Achievement",
+    "description": "Celebrate major hydration milestones",
+    "category": "milestone",
+    "template_type": "rich",
+    "email_subject": "🏆 Incredible Milestone: {{milestone_name}} Achieved!",
+    "email_body": "Congratulations, {{user_name}}!\n\nYou've just achieved an incredible milestone: {{milestone_name}}!\n\nMilestone Details:\n- Achievement: {{milestone_description}}\n- Date Achieved: {{achievement_date}}\n- Total Days: {{total_days}}\n- Total Water Logged: {{total_water_logged}}L\n- Streak: {{current_streak}} days\n\n{{milestone_story}}\n\nThis is a testament to your dedication and commitment to healthy hydration habits. You're truly an inspiration!\n\nRewards Unlocked:\n{{rewards_unlocked}}\n\nKeep up the amazing work!\n\nProudly yours,\nWater Bottle Tracker Team",
+    "email_html": "<html><body><div style='background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%); padding: 30px; text-align: center;'><h1>🏆 Milestone Achieved!</h1><h2>{{milestone_name}}</h2><p>Congratulations, {{user_name}}!</p></div><div style='padding: 20px;'><div style='background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;'><h3>Achievement Details</h3><ul><li><strong>Achievement:</strong> {{milestone_description}}</li><li><strong>Date:</strong> {{achievement_date}}</li><li><strong>Total Days:</strong> {{total_days}}</li><li><strong>Total Water:</strong> {{total_water_logged}}L</li><li><strong>Current Streak:</strong> {{current_streak}} days</li></ul></div><p>{{milestone_story}}</p><div style='background: #e8f5e8; padding: 15px; border-radius: 8px;'><h4>🎁 Rewards Unlocked</h4><p>{{rewards_unlocked}}</p></div></div></body></html>",
+    "sms_content": "🏆 MILESTONE ACHIEVED! {{milestone_name}} - {{total_days}} days, {{total_water_logged}}L logged! Amazing work!",
+    "push_title": "🏆 Milestone Achieved!",
+    "push_body": "{{milestone_name}} - {{total_days}} days of dedication!",
+    "in_app_title": "🏆 Incredible Milestone!",
+    "in_app_content": "{{milestone_name}} achieved! {{total_days}} days, {{total_water_logged}}L logged. {{current_streak}} day streak!",
+    "variables": {
+      "user_name": "string",
+      "milestone_name": "string",
+      "milestone_description": "string",
+      "achievement_date": "string",
+      "total_days": "number",
+      "total_water_logged": "number",
+      "current_streak": "number",
+      "milestone_story": "string",
+      "rewards_unlocked": "string",
+      "milestone_id": "string",
+      "milestone_level": "string"
+    },
+    "personalization_rules": {
+      "milestone_level": {
+        "bronze": "Great start! You're building excellent habits.",
+        "silver": "Impressive dedication! You're becoming a hydration pro.",
+        "gold": "Outstanding achievement! You're a true hydration champion.",
+        "platinum": "Legendary status! You're an inspiration to others."
+      }
+    },
+    "interactive_elements": {
+      "buttons": [
+        {
+          "text": "Share Achievement",
+          "action": "share_milestone",
+          "style": "primary",
+          "data": {
+            "milestone_id": "{{milestone_id}}"
+          }
+        },
+        {
+          "text": "View Rewards",
+          "action": "view_rewards",
+          "style": "secondary"
+        },
+        {
+          "text": "Next Goal",
+          "action": "set_next_goal",
+          "style": "tertiary"
+        }
+      ]
+    },
+    "is_active": true,
+    "is_system": true,
+    "version": "1.0.0",
+    "created_at": "2024-01-15T08:00:00Z",
+    "updated_at": "2024-01-15T08:00:00Z"
+  }
+] 
