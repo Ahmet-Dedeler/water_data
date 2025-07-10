@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "event_type": "failed_login_attempt",
+    "severity": "medium",
+    "ip_address": "192.168.1.100",
+    "user_id": null,
+    "description": "Failed login attempt for username: 'admin'",
+    "metadata": {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36"
+    },
+    "is_resolved": false
+  },
+  {
+    "id": 2,
+    "event_type": "permission_denied",
+    "severity": "warn",
+    "ip_address": "10.0.0.5",
+    "user_id": 3,
+    "description": "User ID 3 attempted to access admin endpoint /api/v1/admin/summary",
+    "metadata": {
+      "endpoint": "/api/v1/admin/summary"
+    },
+    "is_resolved": true,
+    "resolved_by_user_id": 1,
+    "resolved_at": "2023-10-28T11:00:00Z"
+  },
+  {
+    "id": 3,
+    "event_type": "user_password_reset_request",
+    "severity": "info",
+    "ip_address": "203.0.113.50",
+    "user_id": 5,
+    "description": "Password reset was requested for user ID 5.",
+    "is_resolved": false
+  },
+  {
+    "id": 4,
+    "event_type": "api_key_created",
+    "severity": "low",
+    "ip_address": "172.16.0.10",
+    "user_id": 2,
+    "description": "A new API key was created for user ID 2.",
+    "metadata": {
+      "key_prefix": "abc..."
+    },
+    "is_resolved": false
+  },
+  {
+    "id": 5,
+    "event_type": "security_scan",
+    "severity": "critical",
+    "ip_address": "203.0.113.100",
+    "user_id": null,
+    "description": "Potential SQL injection attempt detected.",
+    "metadata": {
+      "payload": "' OR 1=1; --"
+    },
+    "is_resolved": false
+  }
+] 

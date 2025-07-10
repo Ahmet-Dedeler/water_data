@@ -10,7 +10,7 @@ from app.models import BaseResponse
 from app.models.user import (
     User, UserCreate, UserUpdate, UserProfile, UserProfileUpdate,
     UserLogin, PasswordChange, PasswordReset, PasswordResetConfirm,
-    Token, UserPreferences, UserPreferencesUpdate, DailyStreak, StreakSummary
+    Token, UserPreferencesUpdate, DailyStreak, StreakSummary
 )
 from app.services.user_service import UserService
 from app.core.auth import (

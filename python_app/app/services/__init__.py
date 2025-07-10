@@ -1,4 +1,3 @@
-from .data_service import data_service
 from .water_service import water_service
 from .user_service import user_service
 from .search_service import SearchService
@@ -9,7 +8,6 @@ from .notification_service import notification_service
 from .export_service import export_service
 
 __all__ = [
-    "data_service",
     "water_service",
     "SearchService",
     "user_service",

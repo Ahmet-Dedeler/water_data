@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "initiated_by_user_id": 1,
+    "status": "completed",
+    "backup_type": "full",
+    "storage_location": "s3",
+    "started_at": "2023-10-26T02:00:00Z",
+    "completed_at": "2023-10-26T02:15:30Z",
+    "archive_path": "s3://my-backup-bucket/full_20231026020000.tar.gz",
+    "metadata": {
+      "tables_backed_up": ["users", "water_logs", "drinks", "health_goals"],
+      "file_count": 5432
+    }
+  },
+  {
+    "id": 2,
+    "initiated_by_user_id": 1,
+    "status": "failed",
+    "backup_type": "incremental",
+    "storage_location": "local",
+    "started_at": "2023-10-27T03:00:00Z",
+    "completed_at": "2023-10-27T03:02:15Z",
+    "archive_path": null,
+    "error_message": "Permission denied while accessing /var/www/uploads.",
+    "metadata": {
+      "tables_backed_up": ["water_logs"],
+      "file_count": 50
+    }
+  },
+  {
+    "id": 3,
+    "initiated_by_user_id": null,
+    "status": "running",
+    "backup_type": "database_only",
+    "storage_location": "azure_blob",
+    "started_at": "2023-10-28T02:00:00Z",
+    "completed_at": null,
+    "archive_path": null,
+    "metadata": {
+      "reason": "Scheduled daily database backup"
+    }
+  },
+  {
+    "id": 4,
+    "initiated_by_user_id": 2,
+    "status": "pending",
+    "backup_type": "full",
+    "storage_location": "s3",
+    "started_at": null,
+    "completed_at": null,
+    "archive_path": null,
+    "metadata": {}
+  }
+] 

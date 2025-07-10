@@ -1,6 +1,7 @@
 from pydantic import BaseModel, Field, computed_field, field_validator
 from typing import List, Optional, Dict, Any, Union
 from .common import HealthStatus
+from datetime import datetime
 
 
 class Brand(BaseModel):
@@ -270,6 +271,14 @@ class WaterSummary(BaseModel):
             }
         }
 
+
+class WaterLogSearchCriteria(BaseModel):
+    """Model for searching/filtering water logs."""
+    start_date: Optional[datetime] = None
+    end_date: Optional[datetime] = None
+    water_id: Optional[int] = None
+    min_volume: Optional[float] = None
+    drink_type_id: Optional[int] = None
 
 class WaterLogCreate(BaseModel):
     """Model for logging water intake."""

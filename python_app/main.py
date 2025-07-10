@@ -15,16 +15,42 @@ import os
 # --- Importing from app directory ---
 from app.core.logging_config import setup_logging
 from app.core.config import settings
-from app.api.endpoints import (
-    users, water, health_goals, achievements, social,
-    notifications, analytics, admin, api_keys, leaderboards,
-    water_quality, coaching, health_integration, reviews, recommendations,
-    search, exports, reminders, push, comments, gamification,
-    drinks, calculator, health, challenges, friends, activity_feed,
-    messaging, advanced_analytics, notification_system
-)
+from app.api.endpoints import users
+from app.api.endpoints import water
+from app.api.endpoints import health_goals
+from app.api.endpoints import achievements
+from app.api.endpoints import social
+from app.api.endpoints import notifications
+from app.api.endpoints import analytics
+from app.api.endpoints import admin
+from app.api.endpoints import api_keys
+from app.api.endpoints import leaderboards
+from app.api.endpoints import water_quality
+from app.api.endpoints import coaching
+from app.api.endpoints import health_integration
+from app.api.endpoints import reviews
+from app.api.endpoints import recommendations
+from app.api.endpoints import search
+from app.api.endpoints import exports
+from app.api.endpoints import reminders
+from app.api.endpoints import push
+from app.api.endpoints import comments
+from app.api.endpoints import gamification
+from app.api.endpoints import drinks
+from app.api.endpoints import calculator
+from app.api.endpoints import health
+from app.api.endpoints import challenges
+from app.api.endpoints import friends
+from app.api.endpoints import activity_feed
+from app.api.endpoints import messaging
+from app.api.endpoints import advanced_analytics
+from app.api.endpoints import notification_system
+from app.api.endpoints import security_system
+from app.api.endpoints import websockets_system
+from app.api.endpoints import visualization_system
 from app.db.database import SessionLocal, engine, Base
 from app.services.scheduler_service import SchedulerManager
+from app.middleware.audit_middleware import AuditMiddleware
 
 # --- Pre-startup setup ---
 
@@ -101,6 +127,9 @@ if settings.BACKEND_CORS_ORIGINS:
         allow_headers=["*"],
     )
 
+# Audit Middleware to log requests
+app.add_middleware(AuditMiddleware)
+
 # Mount static files
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
@@ -137,8 +166,13 @@ api_router.include_router(friends.router, prefix="/friends", tags=["Friends"])
 api_router.include_router(activity_feed.router, prefix="/activity-feed", tags=["Activity Feed"])
 api_router.include_router(messaging.router, prefix="/messaging", tags=["Messaging"])
 api_router.include_router(advanced_analytics.router, prefix="/advanced-analytics", tags=["Advanced Analytics"])
+api_router.include_router(notification_system.router, prefix="/notification-system", tags=["Notification System"])
+api_router.include_router(security_system.router, prefix="/security", tags=["Security"])
+api_router.include_router(visualization_system.router, prefix="/visualizations", tags=["Visualizations"])
+
 
 app.include_router(api_router)
+app.include_router(websockets_system.router)
 
 # --- Root Endpoint ---
 

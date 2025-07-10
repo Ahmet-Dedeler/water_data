@@ -1,0 +1,42 @@
+[
+  {
+    "query": "healthy morning drinks",
+    "frequency": 150,
+    "ctr": 0.35
+  },
+  {
+    "query": "how to drink more water",
+    "frequency": 220,
+    "ctr": 0.45
+  },
+  {
+    "query": "caffeine content in coffee",
+    "frequency": 95,
+    "ctr": 0.25
+  },
+  {
+    "query": "user:janesmith",
+    "frequency": 30,
+    "ctr": 0.80
+  },
+  {
+    "query": "sugar-free electrolytes",
+    "frequency": 110,
+    "ctr": 0.30
+  },
+  {
+    "query": "benefits of hydration",
+    "frequency": 180,
+    "ctr": 0.55
+  },
+  {
+    "query": "best water bottle",
+    "frequency": 75,
+    "ctr": 0.20
+  },
+  {
+    "query": "fruit infused water recipes",
+    "frequency": 130,
+    "ctr": 0.40
+  }
+] 

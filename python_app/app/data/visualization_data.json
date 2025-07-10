@@ -1,0 +1,88 @@
+{
+  "hydration_dashboard": {
+    "hydration_over_time": {
+      "chart_type": "time_series",
+      "title": "Hydration Over Time",
+      "data": {
+        "datasets": [
+          {
+            "label": "Hydration (ml)",
+            "data": [
+              {"x": "2023-10-22", "y": 2200},
+              {"x": "2023-10-23", "y": 2500},
+              {"x": "2023-10-24", "y": 1800},
+              {"x": "2023-10-25", "y": 2800},
+              {"x": "2023-10-26", "y": 3000},
+              {"x": "2023-10-27", "y": 2400},
+              {"x": "2023-10-28", "y": 2600}
+            ],
+            "color": "#3498db"
+          }
+        ],
+        "y_axis_label": "Milliliters (ml)"
+      }
+    },
+    "drink_distribution": {
+      "chart_type": "pie",
+      "title": "Drink Type Distribution",
+      "data": {
+        "labels": ["Water", "Coffee", "Tea", "Juice", "Soda"],
+        "datasets": [
+          {
+            "data": [65, 15, 10, 5, 5],
+            "backgroundColor": ["#3498db", "#e67e22", "#2ecc71", "#f1c40f", "#e74c3c"]
+          }
+        ]
+      }
+    },
+    "daily_comparison": {
+      "chart_type": "bar",
+      "title": "Daily Intake vs. Goal",
+      "data": {
+        "labels": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+        "datasets": [
+          {
+            "label": "Your Intake (ml)",
+            "data": [
+              {"x": "Sun", "y": 2200},
+              {"x": "Mon", "y": 2500},
+              {"x": "Tue", "y": 1800},
+              {"x": "Wed", "y": 2800},
+              {"x": "Thu", "y": 3000},
+              {"x": "Fri", "y": 2400},
+              {"x": "Sat", "y": 2600}
+            ],
+            "color": "#2ecc71"
+          },
+          {
+            "label": "Your Goal (ml)",
+            "data": [
+              {"x": "Sun", "y": 2500},
+              {"x": "Mon", "y": 2500},
+              {"x": "Tue", "y": 2500},
+              {"x": "Wed", "y": 2500},
+              {"x": "Thu", "y": 2500},
+              {"x": "Fri", "y": 2500},
+              {"x": "Sat", "y": 2500}
+            ],
+            "color": "#bdc3c7"
+          }
+        ]
+      }
+    },
+    "hydration_score": {
+      "chart_type": "gauge",
+      "title": "Overall Hydration Score",
+      "data": {
+        "value": 88.5,
+        "max_value": 100,
+        "label": "Hydration Score",
+        "color_ranges": [
+          {"from": 0, "to": 40, "color": "#e74c3c"},
+          {"from": 40, "to": 70, "color": "#f1c40f"},
+          {"from": 70, "to": 100, "color": "#2ecc71"}
+        ]
+      }
+    }
+  }
+} 

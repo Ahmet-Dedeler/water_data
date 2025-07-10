@@ -24,6 +24,7 @@ ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24  # 24 hours
 REFRESH_TOKEN_EXPIRE_MINUTES = 60 * 24 * 7  # 7 days
 
+# API Key Header Scheme
 api_key_header_scheme = APIKeyHeader(name="X-API-Key", auto_error=False)
 
 

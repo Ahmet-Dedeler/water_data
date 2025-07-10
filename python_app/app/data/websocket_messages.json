@@ -1,0 +1,90 @@
+[
+  {
+    "description": "Client authenticates with the server.",
+    "message": {
+      "type": "authenticate",
+      "payload": {
+        "token": "your-jwt-token-here"
+      },
+      "request_id": "client-req-1"
+    }
+  },
+  {
+    "description": "Server responds with successful authentication.",
+    "message": {
+      "type": "authentication_status",
+      "payload": {
+        "success": true,
+        "user_id": 123
+      },
+      "request_id": "client-req-1"
+    }
+  },
+  {
+    "description": "Client subscribes to a channel.",
+    "message": {
+      "type": "subscribe",
+      "payload": {
+        "channel": "leaderboard:global"
+      },
+      "request_id": "client-req-2"
+    }
+  },
+  {
+    "description": "Server confirms subscription.",
+    "message": {
+      "type": "subscription_status",
+      "payload": {
+        "channel": "leaderboard:global",
+        "success": true
+      },
+      "request_id": "client-req-2"
+    }
+  },
+  {
+    "description": "Client sends a chat message.",
+    "message": {
+      "type": "send_message",
+      "payload": {
+        "room_id": "room-456",
+        "text": "Hello everyone!"
+      }
+    }
+  },
+  {
+    "description": "Server broadcasts a chat message to a channel.",
+    "message": {
+      "type": "chat_message",
+      "payload": {
+        "room_id": "room-456",
+        "sender_id": 123,
+        "sender_username": "JohnDoe",
+        "text": "Hello everyone!",
+        "timestamp": "2023-10-28T12:00:00Z"
+      }
+    }
+  },
+  {
+    "description": "Server sends a new notification to a user.",
+    "message": {
+      "type": "new_notification",
+      "payload": {
+        "id": 789,
+        "title": "New Achievement Unlocked!",
+        "message": "You've earned the 'Early Riser' achievement.",
+        "read": false
+      }
+    }
+  },
+  {
+    "description": "Server sends an error message.",
+    "message": {
+      "type": "error",
+      "payload": {
+        "message": "Invalid channel name.",
+        "level": "error"
+      },
+      "request_id": "client-req-3"
+    }
+  }
+] 

@@ -46,6 +46,16 @@ def test_client(db_session: Session) -> Generator[TestClient, Any, Any]:
         yield client
     del app.dependency_overrides[get_db]
 
+@pytest.fixture(scope="function")
+async def async_test_client(db_session: Session) -> Generator[httpx.AsyncClient, Any, Any]:
+    def override_get_db():
+        yield db_session
+    
+    app.dependency_overrides[get_db] = override_get_db
+    async with httpx.AsyncClient(app=app, base_url="http://test") as client:
+        yield client
+    del app.dependency_overrides[get_db]
+
 # --- Test Data Fixtures ---
 @pytest.fixture(scope="function")
 def test_user(db_session: Session) -> db_models.User:
